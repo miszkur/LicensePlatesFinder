@@ -32,41 +32,47 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:hint="KRA"
-            android:layout_marginLeft="40dp"
-            app:layout_constraintLeft_toLeftOf="@+id/imageView"
             android:layout_marginTop="8dp"
             android:maxLength="3"
             android:fontFamily="monospace"
             android:textSize="70sp"
             android:inputType="textCapCharacters" app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView" android:layout_marginBottom="8dp"/>
+            app:layout_constraintBottom_toBottomOf="@+id/imageView" android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.506" app:layout_constraintRight_toLeftOf="@+id/notImportantLetters"
+            android:layout_marginRight="16dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_answer" android:layout_marginTop="8dp"
+            android:id="@+id/tv_answer" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginLeft="8dp"
             app:layout_constraintLeft_toLeftOf="parent" android:layout_marginRight="8dp"
             app:layout_constraintRight_toRightOf="parent"
             android:textSize="24sp" android:textColor="#313160" android:fontFamily="casual"
-            app:layout_constraintHorizontal_bias="0.501"/>
+            app:layout_constraintHorizontal_bias="0.501"
+            android:textAlignment="center"/>
     <Button
             android:text="@string/button_text"
             android:layout_width="wrap_content"
-            android:layout_height="0dp" android:id="@+id/button"
-            app:layout_constraintLeft_toRightOf="@+id/input_search" android:layout_marginLeft="-53dp"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            android:layout_marginLeft="8dp"
+            android:background="#454b7a"
             android:onClick="onClick [MainActivity]" android:fontFamily="monospace"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView" android:layout_marginBottom="6dp"
-            android:layout_marginRight="8dp" app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="8dp" app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/notImportantLetters"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView" android:textColor="#ccd6fa"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:id="@+id/notImportantLetters" android:textSize="70sp" android:layout_marginLeft="0dp"
+            android:id="@+id/notImportantLetters" android:textSize="70sp"
             app:layout_constraintTop_toTopOf="@+id/input_search" android:layout_marginTop="10dp"
             android:text="@string/license_plate_example" android:fontFamily="monospace"
             app:layout_constraintBottom_toBottomOf="@+id/input_search" android:layout_marginBottom="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="32dp"
             app:layout_constraintRight_toRightOf="@+id/imageView"
-            app:layout_constraintLeft_toRightOf="@+id/input_search" android:textColor="#000000"/>
+            android:textColor="#000000" app:layout_constraintVertical_bias="0.0"/>
 
 
 </android.support.constraint.ConstraintLayout>

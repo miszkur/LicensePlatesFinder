@@ -36,12 +36,115 @@ public class LicencePlates {
                 ,{"tk","Kielce"},{"tbu","Busko"},{"tje","Jędrzejów"},{"tka","Kazimierza Wielka"},{"tki","Kielecki"},{"tkn","Końskie"},{"top","Opatów"},{"tos","Ostrowiec Świętokrzyski"},{"tpi","Pińczów"},{"tsa","Sandomierz"},{"tsk","Skarżysko-Kamienna"},{"tst","Starachowice"},{"tsz","Staszów"},{"twl","Włoszczowa"}
 
                 ,{"ne","Elbląg"},{"no","Olsztyn"},{"nba","Bartoszyce"},{"nbr","Braniewo"},{"ndz","Działdowo"},{"neb","Elbląski"},{"nel","Ełk"},{"ngi","Giżycko"},{"nil","Iława"},{"nke","Kętrzyn"},{"nli","Lidzbark Warmiński"},{"nmr","Mrągowo"},{"nni","Nidzica"},{"nnnm","Nowe Miasto Lubawskie"},{"nog","Olecko"},{"nol","Olsztyński"},{"nos","Ostruda"},{"npi","Pisz"},{"nsz","Szczytno"}};
-            for (String [] pair : plates) {
+
+        String voivodeship="NA";
+        switch (shortcut.charAt(0)) {
+
+            case 'l':
+
+                voivodeship = "Lubelskie";
+
+                break;
+
+            case 'd':
+
+                voivodeship = "Dolnośląskie";
+
+                break;
+
+            case 'f':
+
+                voivodeship = "Lubuskie";
+
+                break;
+
+            case 'k':
+
+                voivodeship = "Małopolskie";
+
+                break;
+
+            case 'r':
+
+                voivodeship = "Podkarpackie";
+
+                break;
+
+            case 'w':
+
+                voivodeship = "Mazowieckie";
+
+                break;
+
+            case 't':
+
+                voivodeship = "Świętokrzyskie";
+
+                break;
+
+            case 'o':
+
+                voivodeship = "Opolskie";
+
+                break;
+
+            case 's':
+
+                voivodeship = "Śląskie";
+
+                break;
+
+            case 'b':
+
+                voivodeship = "Podlaskie";
+
+                break;
+
+            case 'c':
+
+                voivodeship = "Kujawsko-Pomorskie";
+
+                break;
+
+            case 'e':
+
+                voivodeship = "Łódzkie";
+
+                break;
+
+            case 'g':
+
+                voivodeship = "Pomorskie";
+
+                break;
+
+            case 'n':
+
+                voivodeship = "Warmińsko-Mazurskie";
+
+                break;
+
+            case 'p':
+
+                voivodeship = "Wielkopolskie";
+
+                break;
+
+            case 'z':
+
+                voivodeship = "Zachodniopomorskie";
+
+                break;
+
+        }
+
+        for (String [] pair : plates) {
                 if(pair[0].equals(shortcut)) {
                     foundCity = pair[1];
                 }
             }
 
-        return  foundCity;
+
+        return  "wojewodztwo: " + voivodeship + "\npowiat: " + foundCity;
     }
 }
