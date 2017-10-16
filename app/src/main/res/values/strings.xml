@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">RozpoznawarkaTablic</string>
+    <string name="instructions">Wpisz 2 lub 3 pierwsze litery z tablicy rejestracyjnej:</string>
+    <string name="button_text">Szukaj</string>
+    <string name="license_plate_example">54YH</string>
+    <string name="example_input">KRK</string>
     <color name="white">#FFFFFF</color>
 </resources>
