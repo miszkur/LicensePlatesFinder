@@ -39,7 +39,7 @@
             android:inputType="textCapCharacters" app:layout_constraintTop_toTopOf="@+id/imageView"
             app:layout_constraintBottom_toBottomOf="@+id/imageView" android:layout_marginBottom="8dp"
             app:layout_constraintVertical_bias="0.506" app:layout_constraintRight_toLeftOf="@+id/notImportantLetters"
-            android:layout_marginRight="16dp"/>
+            android:layout_marginRight="8dp"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             app:layout_constraintTop_toTopOf="@+id/input_search" android:layout_marginTop="10dp"
             android:text="@string/license_plate_example" android:fontFamily="monospace"
             app:layout_constraintBottom_toBottomOf="@+id/input_search" android:layout_marginBottom="8dp"
-            android:layout_marginRight="32dp"
+            android:layout_marginRight="16dp"
             app:layout_constraintRight_toRightOf="@+id/imageView"
             android:textColor="#000000" app:layout_constraintVertical_bias="0.0"/>
 
