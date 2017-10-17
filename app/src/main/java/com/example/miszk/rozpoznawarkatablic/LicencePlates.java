@@ -143,8 +143,9 @@ public class LicencePlates {
                     foundCity = pair[1];
                 }
             }
-
-
-        return  "wojewodztwo: " + voivodeship + "\npowiat: " + foundCity;
+        if (!foundCity.equals("nie ma takiej rejestracji :<"))
+            return  "wojewodztwo: " + voivodeship + "\npowiat: " + foundCity;
+        else
+            return foundCity;
     }
 }
